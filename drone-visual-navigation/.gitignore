@@ -1,0 +1,40 @@
+# Flight data (never commit uploads)
+data/flights/
+!/data/flights/.gitkeep
+
+# Raw / processed datasets (project root — keep out of repo)
+Dataset/raw/
+data/raw/
+data/processed/
+
+# Video blobs
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# DJI DAT / flight logs
+*.dat
+*.DAT
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Env
+.env
+.env.local
+
+# IDE / OS
+.DS_Store
+Thumbs.db
