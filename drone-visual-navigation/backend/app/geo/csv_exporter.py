@@ -6,7 +6,7 @@ import csv
 import io
 from typing import Any
 
-from app.telemetry.telemetry_schema import TelemetryRecord
+from drone_nav.telemetry.telemetry_schema import TelemetryRecord
 
 
 _CSV_COLUMNS: list[str] = [

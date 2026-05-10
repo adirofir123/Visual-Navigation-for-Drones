@@ -1,7 +1,7 @@
 """KML export geometry tests."""
 
 from app.geo.kml_exporter import telemetry_to_kml_bytes
-from app.telemetry.telemetry_schema import TelemetryRecord
+from drone_nav.telemetry.telemetry_schema import TelemetryRecord
 
 
 def _rec(lon: float, lat: float, alt: float | None) -> TelemetryRecord:

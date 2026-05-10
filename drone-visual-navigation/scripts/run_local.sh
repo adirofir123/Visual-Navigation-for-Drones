@@ -25,6 +25,11 @@ ensure_backend_python() {
     echo "[backend] Installing deps into .venv ..."
     "$vpip" install -r "$ROOT/backend/requirements.txt"
   fi
+
+  if ! "$vpy" -c "import drone_nav" 2>/dev/null; then
+    echo "[backend] Installing backend package editable (app + drone_nav) ..."
+    (cd "$ROOT/backend" && "$vpip" install -e .)
+  fi
 }
 
 ensure_frontend_node_modules() {

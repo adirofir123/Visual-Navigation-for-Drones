@@ -10,7 +10,7 @@ import math
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-from app.telemetry.telemetry_schema import TelemetryRecord
+from drone_nav.telemetry.telemetry_schema import TelemetryRecord
 
 
 def _finite_pair(r: TelemetryRecord) -> tuple[float, float, float] | None:

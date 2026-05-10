@@ -14,14 +14,14 @@ from fastapi.responses import FileResponse
 from app.geo.csv_exporter import telemetry_to_csv_bytes
 from app.geo.kml_exporter import telemetry_to_kml_bytes
 from app.storage.flight_storage import FlightStorage, derive_stored_video_name
-from app.telemetry.srt_parser import (
+from drone_nav.telemetry.srt_parser import (
     SrtParseError,
     build_fields_detected,
     build_summary,
     parse_dji_srt,
     records_to_jsonable,
 )
-from app.telemetry.telemetry_schema import FlightManualMetadata, FlightSummary
+from drone_nav.telemetry.telemetry_schema import FlightManualMetadata, FlightSummary
 from app.video.video_metadata import extract_video_metadata
 from app.video.video_streaming import video_file_response
 

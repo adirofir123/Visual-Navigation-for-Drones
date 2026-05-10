@@ -10,12 +10,13 @@ from pathlib import Path
 _SCRIPT = Path(__file__).resolve()
 _PROJECT_ROOT = _SCRIPT.parents[1]
 _BACKEND_ROOT = _PROJECT_ROOT / "backend"
-if str(_BACKEND_ROOT) not in sys.path:
-    sys.path.insert(0, str(_BACKEND_ROOT))
+for _p in (_BACKEND_ROOT, _BACKEND_ROOT / "src"):
+    if str(_p) not in sys.path:
+        sys.path.insert(0, str(_p))
 
 
 def main() -> int:
-    from app.preprocessing.dat_inspector import inspect_dat_file, write_inspection_outputs
+    from drone_nav.preprocessing.dat_inspector import inspect_dat_file, write_inspection_outputs
 
     p = argparse.ArgumentParser(description="Heuristic DAT / flight log inspector.")
     p.add_argument("--dat", type=Path, required=True, help="Path to .DAT flight log.")

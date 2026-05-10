@@ -2,8 +2,8 @@
 
 import pytest
 
-from app.preprocessing.frame_sampler import NearestCueIndex, frame_index_at_time, samples_seconds
-from app.telemetry.telemetry_schema import TelemetryRecord
+from drone_nav.preprocessing.frame_sampler import NearestCueIndex, frame_index_at_time, samples_seconds
+from drone_nav.telemetry.telemetry_schema import TelemetryRecord
 
 
 def _rec(bi: int, s: float, e: float) -> TelemetryRecord:

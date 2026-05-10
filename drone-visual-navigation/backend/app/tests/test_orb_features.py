@@ -7,7 +7,7 @@ pytest.importorskip("cv2")
 
 from pathlib import Path
 
-from app.features.orb_features import extract_orb_to_npz
+from drone_nav.features.orb_features import extract_orb_to_npz
 
 
 def test_orb_blank_image_writes_empty_npz(tmp_path: Path) -> None:

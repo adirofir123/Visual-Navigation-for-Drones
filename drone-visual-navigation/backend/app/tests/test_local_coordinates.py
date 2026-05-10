@@ -2,8 +2,8 @@
 
 import pytest
 
-from app.geometry.local_coordinates import LocalTangentOrigin, first_origin_from_records, usable_pair_lat_lon
-from app.telemetry.telemetry_schema import TelemetryRecord
+from drone_nav.geometry.local_coordinates import LocalTangentOrigin, first_origin_from_records, usable_pair_lat_lon
+from drone_nav.telemetry.telemetry_schema import TelemetryRecord
 
 
 def test_usable_pair_prefers_gps_fields() -> None:
