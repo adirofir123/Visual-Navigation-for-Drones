@@ -4,7 +4,7 @@ import json
 
 from pathlib import Path
 
-from app.preprocessing.dat_inspector import inspect_dat_file, write_inspection_outputs
+from drone_nav.preprocessing.dat_inspector import inspect_dat_file, write_inspection_outputs
 
 
 def test_missing_dat_is_graceful(tmp_path: Path) -> None:

@@ -2,7 +2,7 @@
 
 import pytest
 
-from app.telemetry.srt_parser import SrtParseError, parse_timestamp_to_seconds, parse_dji_srt
+from drone_nav.telemetry.srt_parser import SrtParseError, parse_timestamp_to_seconds, parse_dji_srt
 
 
 def test_timestamp_to_seconds() -> None:

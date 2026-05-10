@@ -2,7 +2,7 @@
 
 import pytest
 
-from app.preprocessing.reference_schema import CSV_FIELD_ORDER, ReferenceFrameRecord
+from drone_nav.preprocessing.reference_schema import CSV_FIELD_ORDER, ReferenceFrameRecord
 
 
 def test_reference_record_required_and_optional_none() -> None:

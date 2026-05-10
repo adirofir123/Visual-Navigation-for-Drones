@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CLI: build reference dataset from MP4 + SRT (see app.preprocessing.reference_builder)."""
+"""CLI: build reference dataset from MP4 + SRT (see drone_nav.preprocessing.reference_builder)."""
 
 from __future__ import annotations
 
@@ -10,12 +10,13 @@ from pathlib import Path
 _SCRIPT = Path(__file__).resolve()
 _PROJECT_ROOT = _SCRIPT.parents[1]
 _BACKEND_ROOT = _PROJECT_ROOT / "backend"
-if str(_BACKEND_ROOT) not in sys.path:
-    sys.path.insert(0, str(_BACKEND_ROOT))
+for _p in (_BACKEND_ROOT, _BACKEND_ROOT / "src"):
+    if str(_p) not in sys.path:
+        sys.path.insert(0, str(_p))
 
 
 def main() -> int:
-    from app.preprocessing.reference_builder import build_reference_dataset
+    from drone_nav.preprocessing.reference_builder import build_reference_dataset
 
     p = argparse.ArgumentParser(description="Prepare georeferenced reference frames from MP4 + SRT.")
     p.add_argument("--video", type=Path, required=True, help="Path to source MP4 (or video file).")
