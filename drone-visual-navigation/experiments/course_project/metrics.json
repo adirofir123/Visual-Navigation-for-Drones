@@ -1,0 +1,21 @@
+{
+  "reference_frames": 252,
+  "baseline": {
+    "n": 16,
+    "mean_m": 90.5,
+    "median_m": 66.6,
+    "p90_m": 208.7,
+    "max_m": 262.7,
+    "recall@50m": 0.19,
+    "recall@100m": 0.81
+  },
+  "sequential": {
+    "n": 13,
+    "mean_m": 72.9,
+    "median_m": 65.1,
+    "p90_m": 89.6,
+    "max_m": 228.6,
+    "recall@50m": 0.23,
+    "recall@100m": 0.92
+  }
+}
