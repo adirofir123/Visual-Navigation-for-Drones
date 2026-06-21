@@ -1,0 +1,41 @@
+{
+  "map_dir": "Dataset\\preprocessed\\DJI_20260427152226_0017_D\\reference",
+  "query_dir": "Dataset\\preprocessed\\DJI_20260427152735_0019_D\\reference",
+  "reference_frames": 252,
+  "cross_flight": {
+    "n": 8,
+    "mean_m": 45.6,
+    "median_m": 45.8,
+    "p90_m": 79.6,
+    "max_m": 89.7,
+    "recall@25m": 0.38,
+    "recall@50m": 0.75,
+    "recall@100m": 1.0
+  },
+  "cross_flight_confident_only": {
+    "n": 4,
+    "mean_m": 51.2,
+    "median_m": 49.1,
+    "p90_m": 85.4,
+    "max_m": 89.7,
+    "recall@25m": 0.5,
+    "recall@50m": 0.5,
+    "recall@100m": 1.0
+  },
+  "leave_one_out": {
+    "n": 20,
+    "mean_m": 26.6,
+    "median_m": 1.1,
+    "p90_m": 69.3,
+    "max_m": 74.9,
+    "recall@25m": 0.6,
+    "recall@50m": 0.65,
+    "recall@100m": 1.0
+  },
+  "params": {
+    "coverage_m": 45.0,
+    "min_inliers": 20,
+    "query_stride": 3,
+    "loo_window_s": 6.0
+  }
+}

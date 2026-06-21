@@ -1,0 +1,98 @@
+[
+  {
+    "query_frame": 0,
+    "true_lat": 32.102482,
+    "true_lon": 35.209687,
+    "est_lat": 32.102628,
+    "est_lon": 35.209727,
+    "matched_frame": 330,
+    "n_inliers": 77,
+    "confident": true,
+    "error_m": 16.7,
+    "seconds": 2.37
+  },
+  {
+    "query_frame": 90,
+    "true_lat": 32.102483,
+    "true_lon": 35.209689,
+    "est_lat": 32.102665,
+    "est_lon": 35.209574,
+    "matched_frame": 1169,
+    "n_inliers": 22,
+    "confident": true,
+    "error_m": 23.0,
+    "seconds": 2.53
+  },
+  {
+    "query_frame": 180,
+    "true_lat": 32.102515,
+    "true_lon": 35.209666,
+    "est_lat": 32.103265,
+    "est_lon": 35.209315,
+    "matched_frame": 5994,
+    "n_inliers": 25,
+    "confident": true,
+    "error_m": 89.7,
+    "seconds": 2.51
+  },
+  {
+    "query_frame": 270,
+    "true_lat": 32.102697,
+    "true_lon": 35.209542,
+    "est_lat": 32.102631,
+    "est_lon": 35.209731,
+    "matched_frame": 1079,
+    "n_inliers": 11,
+    "confident": false,
+    "error_m": 19.3,
+    "seconds": 2.43
+  },
+  {
+    "query_frame": 360,
+    "true_lat": 32.102949,
+    "true_lon": 35.209399,
+    "est_lat": 32.102633,
+    "est_lon": 35.209732,
+    "matched_frame": 1049,
+    "n_inliers": 19,
+    "confident": false,
+    "error_m": 47.1,
+    "seconds": 2.43
+  },
+  {
+    "query_frame": 450,
+    "true_lat": 32.103224,
+    "true_lon": 35.209344,
+    "est_lat": 32.102631,
+    "est_lon": 35.209731,
+    "matched_frame": 1079,
+    "n_inliers": 26,
+    "confident": true,
+    "error_m": 75.3,
+    "seconds": 2.43
+  },
+  {
+    "query_frame": 539,
+    "true_lat": 32.103462,
+    "true_lon": 35.209446,
+    "est_lat": 32.103225,
+    "est_lon": 35.209066,
+    "matched_frame": 5904,
+    "n_inliers": 10,
+    "confident": false,
+    "error_m": 44.4,
+    "seconds": 2.53
+  },
+  {
+    "query_frame": 629,
+    "true_lat": 32.103707,
+    "true_lon": 35.209621,
+    "est_lat": 32.103299,
+    "est_lon": 35.209406,
+    "matched_frame": 6024,
+    "n_inliers": 16,
+    "confident": false,
+    "error_m": 49.7,
+    "seconds": 2.55
+  }
+]
